@@ -135,7 +135,7 @@ color: #2D3A45;
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 .Row {
-  width: 345px;
+  width: 365px;
   min-height: 400px;
   min-height: 150px;
   background: #FFFFFF;
@@ -147,7 +147,8 @@ color: #2D3A45;
   justify-content: space-between;
   padding: 16px;
   position: relative;
-  margin: 35px;
+  margin-top: 100px;
+  margin: 15px;
   transition: 0.5s;
 }
 
