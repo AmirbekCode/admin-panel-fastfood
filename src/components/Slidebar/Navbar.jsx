@@ -38,10 +38,7 @@ export default function Navbar() {
                     <li className="categories-item">
 
                         <NavLink
-                            to="test"
-                            style={({ isActive }) =>
-                                isActive ? activeStyle : undefined
-                            }
+                            to="/"
                         >
                             <div className="df">
                                 <img src={Check} className="c-icon" />
@@ -50,7 +47,7 @@ export default function Navbar() {
                         </NavLink>
                     </li>
                     <li className="categories-item">
-                        <NavLink>
+                        <NavLink to='/product' >
                             <div className="df">
                                 <img src={Check2} className="c-icon" />
                                 <h2 className="c-name">Maxsulotlar</h2>

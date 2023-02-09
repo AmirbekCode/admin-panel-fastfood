@@ -6,8 +6,7 @@ import Icon2 from '../../assets/icons/Group.svg'
 import { NavLink } from "react-router-dom"
 import { useState } from "react"
 
-const [row ,setRow] =useState()
-const [column ,setColumn] =useState()
+
 
 
 export default function Header() {
