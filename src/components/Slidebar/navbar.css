@@ -1,0 +1,103 @@
+.Navbar {
+    min-height: 100vh;
+    width: 90%;
+}
+
+.profile-section {
+    display: flex;
+    gap: 30px;
+    padding: 24px;
+}
+
+.categories {
+    display: flex !important;
+    min-height: 85vh;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile_picture {
+    border-radius: 50%;
+}
+
+.categories-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-left: 4px solid orange;
+
+}
+
+
+.categories-item{
+    width: 276px;
+    height: 48px;
+    padding: 35px !important;
+    display: flex;
+    align-items: center;  
+    transition: 0.4s;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+}
+.categories-item:hover {
+    background: orange;
+}
+.categories-item:hover  .c-icon {
+    fill: #fff;
+    background: #ffffff;
+}
+
+.categories-item:hover  .c-name {
+    color: #fff;
+}
+.df ,
+.log-out{
+    display: flex;
+    gap: 22px;
+    align-items: center;
+}
+
+.log-out {
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+
+
+.dfp {
+    display: flex;
+    gap: 22px;
+    align-items: center;
+}
+
+.c-name {
+    font-size: 19px;
+    line-height: 18px;
+    color: #2D3A45;
+    font-weight: 500;
+}
+
+.c-namep {
+    font-size: 19px;
+    line-height: 18px;
+    color: #2D3A45;
+    font-weight: 500;
+}
+.c-icon {
+    padding: 10px;
+    border-radius: 8px;
+    background: #00000021;
+}
+
+.c-iconp {
+    padding: 10px;
+    border-radius: 8px;
+    background: #00000021;
+}
+
+
+.item {
+    position: static;
+}
