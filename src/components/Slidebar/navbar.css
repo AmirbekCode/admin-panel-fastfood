@@ -24,6 +24,7 @@
 .categories-list {
     display: flex;
     flex-direction: column;
+    gap: 3px;
     justify-content: space-between;
     border-left: 4px solid orange;
 
@@ -44,10 +45,22 @@
 .categories-item:hover {
     background: orange;
 }
+.active-item{
+    background: orange;
+    color: #fff;
+}
 .categories-item:hover  .c-icon {
-    fill: #fff;
     background: #ffffff;
 }
+
+.categories-item.active-item .c-icon{
+    background: #ffffff;
+}
+
+.categories-item.active-item .c-name{
+    color: #ffffff;
+}
+
 
 .categories-item:hover  .c-name {
     color: #fff;

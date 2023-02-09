@@ -11,6 +11,7 @@ import LogOut from '../../assets/icons/log-out.svg'
 import { NavLink } from "react-router-dom"
 import Accardion from "../chakra/Menu"
 import Menu from "../chakra/Menu"
+import { useState } from "react"
 
 let activeStyle = {
 
@@ -19,7 +20,113 @@ let activeStyle = {
 let activeClassName = "underline";
 
 
+
+
+
+
+
 export default function Navbar() {
+
+
+    const [buyurtma, setBuyurtma] = useState('')
+
+    function Clickbuyurtma() {
+        
+            setBuyurtma('active-item')
+            setMaxsulot('')
+            setKategori('')
+            setXisobot('')
+            setMijoz('')
+            setBuy('')
+            setFilial('')
+
+        
+    }
+
+    const [maxsulot, setMaxsulot] = useState('')
+
+    function Clickmaxsulot() {
+      
+            setMaxsulot('active-item')
+            setBuyurtma('')
+            setKategori('')
+            setXisobot('')
+            setMijoz('')
+            setBuy('')
+            setFilial('')
+    }
+
+    const [kategori, setKategori] = useState('')
+
+    function Clickkategori() {
+      
+            setKategori('active-item')
+            setMaxsulot('')
+            setBuyurtma('')
+            setXisobot('')
+            setMijoz('')
+            setBuy('')
+            setFilial('')
+    }
+
+    const [filial, setFilial] = useState('')
+
+    function Clickfilial() {
+      
+            setFilial('active-item')
+            setKategori('')
+            setMaxsulot('')
+            setBuyurtma('')
+            setXisobot('')
+            setMijoz('')
+            setBuy('')
+
+
+    }
+
+    const [buy, setBuy] = useState('')
+
+    function Clickbuy() {
+      
+            setBuy('active-item')
+            setFilial('')
+            setKategori('')
+            setMaxsulot('')
+            setBuyurtma('')
+            setXisobot('')
+            setMijoz('')
+
+    }
+
+    const [mijoz, setMijoz] = useState('')
+
+    function Clickmijoz() {
+      
+            setMijoz('active-item')
+            setBuy('')
+            setFilial('')
+            setKategori('')
+            setMaxsulot('')
+            setBuyurtma('')
+            setXisobot('')
+
+    }
+
+
+    const [xisobot, setXisobot] = useState('')
+
+    function Clickxisobot() {
+      
+            setXisobot('active-item')
+            setMijoz('')
+            setBuy('')
+            setFilial('')
+            setKategori('')
+            setMaxsulot('')
+            setBuyurtma('')
+    }
+
+
     return (
         <div className="Navbar" >
             <div className="profile-section">
@@ -35,7 +142,7 @@ export default function Navbar() {
             </div>
             <div className="categories">
                 <ul className="categories-list">
-                    <li className="categories-item">
+                    <li onClick={ Clickbuyurtma} className={`categories-item ${buyurtma}`}>
 
                         <NavLink
                             to="/"
@@ -46,16 +153,16 @@ export default function Navbar() {
                             </div>
                         </NavLink>
                     </li>
-                    <li className="categories-item">
+                    <li onClick={ Clickmaxsulot} className={`categories-item ${maxsulot}`}>
                         <NavLink to='/product' >
-                            <div className="df">
-                                <img src={Check2} className="c-icon" />
+                            <div className="df ">
+                                <img src={Check2} className="c-icon " />
                                 <h2 className="c-name">Maxsulotlar</h2>
                             </div>
                         </NavLink>
                     </li>
 
-                    <li className="categories-item">
+                    <li onClick={ Clickkategori} className={`categories-item ${kategori}`}>
                         <NavLink>
                             <div className="df">
                                 <img src={Check3} className="c-icon" />
@@ -64,7 +171,7 @@ export default function Navbar() {
                         </NavLink>
                     </li>
 
-                    <li className="categories-item">
+                    <li onClick={ Clickfilial} className={`categories-item ${filial}`}>
                         <NavLink>
                             <div className="df">
                                 <img src={Check4} className="c-icon" />
@@ -72,7 +179,7 @@ export default function Navbar() {
                             </div>
                         </NavLink>
                     </li>
-                    <li className="categories-item">
+                    <li onClick={ Clickbuy} className={`categories-item ${buy}`}>
                         <NavLink>
                             <div className="df">
                                 <img src={Check5} className="c-icon" />
@@ -80,7 +187,7 @@ export default function Navbar() {
                             </div>
                         </NavLink>
                     </li>
-                    <li className="categories-item">
+                    <li onClick={ Clickmijoz} className={`categories-item ${mijoz}`}>
                         <NavLink>
                             <div className="df">
                                 <img src={Check6} className="c-icon" />
@@ -88,7 +195,7 @@ export default function Navbar() {
                             </div>
                         </NavLink>
                     </li>
-                    <li className="categories-item">
+                    <li onClick={ Clickxisobot} className={`categories-item ${xisobot}`}>
                         <Menu />
                     </li>
                 </ul>
