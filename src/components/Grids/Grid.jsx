@@ -22,7 +22,7 @@ export default function Grids() {
             h='1200px'
             color='blackAlpha.700'
         >
-            <GridItem pl='2' width={"100vw"} height={'97px'} position={"fixed"} bg={"#fff"} zIndex={"998"} boxShadow={"-1px 3px 3px -1px rgba(0, 0, 0, 0.23)"}>
+            <GridItem pl='2' width={"100vw"} height={'97px'} position={"fixed"} bg={"#fff"} zIndex={"998"} boxShadow={"-1px 5px 5px -1px rgba(0, 0, 0, 0.23)"}>
                 <Header setRow={setRow}/>
             </GridItem>
             <GridItem pl='2' area={'nav'} position={'fixed'} zIndex={"999"}>
