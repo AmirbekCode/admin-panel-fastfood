@@ -53,10 +53,10 @@ export default function Header() {
                 <div className="layout">
                     <ul className="layout1">
                         <li>
-                            <img src={Icon1} className={row}/>
+                            <img src={Icon1}/>
                         </li>
                         <li>
-                            <img src={Icon2} className={column} />
+                            <img src={Icon2}  />
                         </li>
                     </ul>
                 </div>
