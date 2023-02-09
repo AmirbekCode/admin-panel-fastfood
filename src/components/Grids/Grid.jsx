@@ -28,7 +28,7 @@ export default function Grids() {
             <GridItem pl='2' area={'nav'} position={'fixed'} zIndex={"999"}>
                 <Navbar />
             </GridItem>
-            <GridItem pl='2' bg={'gray.200'} area={'main'}>
+            <GridItem pl='2' bg={'gray.200'} area={'main'} paddingLeft={'none'} >
             <Routers Route={parsePath} row={row}/>
             </GridItem>
             <GridItem pl='2' area={'footer'}>
