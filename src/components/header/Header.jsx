@@ -5,6 +5,7 @@ import Icon2 from '../../assets/icons/Group.svg'
 
 import { NavLink } from "react-router-dom"
 import { useState } from "react"
+import SlidebarOrder from "../chakra/SlidebarOrder"
 
 
 
@@ -57,6 +58,9 @@ export default function Header({setRow}) {
                             <img src={Icon2}/>
                         </li>
                     </ul>
+                </div>
+                <div>
+                <SlidebarOrder/>
                 </div>
             </div>
         </div>
