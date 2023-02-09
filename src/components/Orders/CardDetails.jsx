@@ -7,7 +7,7 @@ import { ReactComponent as Xxx } from '../../assets/icons/x.svg';
 import { ReactComponent as Check } from '../../assets/icons/check.svg';
 import axios from 'axios';
 import { useState, useEffect } from 'react';
-function Card({item , state ,setState}) {
+function Card({item , state ,setState , row}) {
 
 
     function delet(id){
@@ -16,7 +16,7 @@ function Card({item , state ,setState}) {
     }
 
     return (
-                    <div className="Card">
+                    <div className={row}>
                         <div className="time-info">
                             <div className="Card-number">
                                 {item.id}
@@ -49,24 +49,24 @@ function Card({item , state ,setState}) {
                                 <Truck />
                                 5,000 UZS
                             </div>
-                            <div className='totalAmout'>
+                        </div>
+                        <div className='totalAmout'>
                                 <p>Umumiy Summa:</p>
                                 <h2 className="totalprice">
                                     40,400 UZS
                                 </h2>
                             </div>
-                        </div>
                         <div className="place-info">
                             <div className="operator">
                                 <p>Operator:</p>
-                                <h4 className="operator">
+                                <h4 className="operator1">
                                     Komilova M
                                 </h4>
                             </div>
                             <div className="filial">
                                 <p>Filial:</p>
                                 <h4 className="location">
-                                
+                                    Komilov M.
                                 </h4>
                             </div>
                         </div>

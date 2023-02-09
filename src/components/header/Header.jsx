@@ -8,10 +8,9 @@ import { useState } from "react"
 
 
 
-
-export default function Header() {
+export default function Header({setRow}) {
     return (
-        <div className="    fixed">
+        <div className="fixed">
             <div className="Header">
                 <div className="add_item">
                     <img src={plus} className='plusimg' />
@@ -51,11 +50,11 @@ export default function Header() {
                 </div>
                 <div className="layout">
                     <ul className="layout1">
-                        <li>
+                        <li  onClick={() => setRow('Card')}>
                             <img src={Icon1}/>
                         </li>
-                        <li>
-                            <img src={Icon2}  />
+                        <li  onClick={() => setRow('Row')}>
+                            <img src={Icon2}/>
                         </li>
                     </ul>
                 </div>

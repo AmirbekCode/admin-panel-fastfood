@@ -2,7 +2,7 @@ import CardDetails from './CardDetails'
 import { useState , useEffect} from 'react';
 import './Card.css'
 import axios from 'axios';
-function Card({data}) {
+function Card({data , row}) {
 
     const [state, setState] = useState([]);
     useEffect(() => {
@@ -21,7 +21,7 @@ function Card({data}) {
         <div className="CardTem">
             {
                 state.map((item, index)=>(
-                    <CardDetails setState={setState} state={state} item={item} key={index}/>
+                    <CardDetails row={row} setState={setState} state={state} item={item} key={index}/>
                 ))                
             }
         </div>
