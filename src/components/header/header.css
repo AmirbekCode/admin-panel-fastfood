@@ -13,7 +13,7 @@
 
 
 .plusimg {
-    padding: 20px;
+    padding: 15px;
     background: #20D472;
     border-radius: 50%;
     cursor: pointer;
@@ -27,7 +27,8 @@
     height: 80px;
     gap: 14px;
     margin-left: 286px;
-    padding: 10px;
+    padding: 10px 20px;
+    font-size: 14px;
 }
 
 .name-bold {
