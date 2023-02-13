@@ -2,7 +2,7 @@ import "./header.css"
 import plus from '../../assets/icons/plus.svg'
 import Icon1 from '../../assets/icons/Group 2.png'
 import Icon2 from '../../assets/icons/Group.svg'
-
+import SlidebarOrder from '../chakra/SlidebarOrder'
 import { NavLink } from "react-router-dom"
 import { useState } from "react"
 
@@ -49,6 +49,7 @@ export default function Header({setRow}) {
                     </ul>
                 </div>
                 <div className="layout">
+                    
                     <ul className="layout1">
                         <li  onClick={() => setRow('Card')}>
                             <img src={Icon1}/>
@@ -58,6 +59,7 @@ export default function Header({setRow}) {
                         </li>
                     </ul>
                 </div>
+                
             </div>
         </div>
 
