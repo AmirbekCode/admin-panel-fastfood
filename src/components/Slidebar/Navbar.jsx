@@ -31,7 +31,6 @@ export default function Navbar() {
     const [buyurtma, setBuyurtma] = useState('')
 
     function Clickbuyurtma() {
-
         setBuyurtma('active-item')
         setMaxsulot('')
         setKategori('')
@@ -39,14 +38,11 @@ export default function Navbar() {
         setMijoz('')
         setBuy('')
         setFilial('')
-
-
     }
 
     const [maxsulot, setMaxsulot] = useState('')
 
     function Clickmaxsulot() {
-
         setMaxsulot('active-item')
         setBuyurtma('')
         setKategori('')
@@ -59,7 +55,6 @@ export default function Navbar() {
     const [kategori, setKategori] = useState('')
 
     function Clickkategori() {
-
         setKategori('active-item')
         setMaxsulot('')
         setBuyurtma('')
