@@ -19,23 +19,23 @@ import { ReactComponent as Check } from '../../assets/icons/check.svg';
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 
-  export default function DrawerExample() {
+ function DrawerExample() {
   const { isOpen, onOpen, onClose } = useDisclosure()
   
-  const [state, setState] = useState([]);
-  useEffect(() => {
-      get();
-  }, []);
+//   const [state, setState] = useState([]);
 
+//   async function get() {
+//     try {
+//         return await axios.get("https://jsonplaceholder.typicode.com/").then((res) => setState(res.data));
+//     } catch (e) {
+//         console.log(e);
+//     }
+// }
 
+//   useEffect(() => {
+//       get();
+//   }, []);
 
-  async function get() {
-    try {
-        return await axios.get("https://jsonplaceholder.typicode.com/users").then((res) => setState(res.data));
-    } catch (e) {
-        console.log(e);
-    }
-}
 
 
     return (
@@ -69,13 +69,13 @@ import { useState, useEffect } from 'react';
                             <div className="user">
                                 <User />
                                 <h4 className="name">
-                                    {state[0].name}
+                                    
                                 </h4>
                             </div>
                             <div className="phone">
                                 <Phone />
                                 <h4 className="phone-number">
-                                    {state[0].phone}
+                                    
                                 </h4>
                             </div>
                         </div>
@@ -128,3 +128,6 @@ import { useState, useEffect } from 'react';
       </>
     )
   }
+
+
+  export default DrawerExample

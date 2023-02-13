@@ -2,7 +2,7 @@ import "./header.css"
 import plus from '../../assets/icons/plus.svg'
 import Icon1 from '../../assets/icons/Group 2.png'
 import Icon2 from '../../assets/icons/Group.svg'
-import SlidebarOrder from '../chakra/SlidebarOrder'
+import DrawerExample from "../chakra/DrawerExample"
 import { NavLink } from "react-router-dom"
 import { useState } from "react"
 
@@ -59,7 +59,7 @@ export default function Header({setRow}) {
                         </li>
                     </ul>
                 </div>
-                
+                <DrawerExample/>
             </div>
         </div>
 
