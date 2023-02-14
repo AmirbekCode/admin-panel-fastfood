@@ -1,21 +1,18 @@
 import "./header.css"
-import plus from '../../assets/icons/plus.svg'
+
 import Icon1 from '../../assets/icons/Group 2.png'
 import Icon2 from '../../assets/icons/Group.svg'
 import DrawerExample from "../chakra/DrawerExample"
 import { NavLink } from "react-router-dom"
 import { useState } from "react"
-
+import SizeExample from "../chakra/SizeExample"
 
 
 export default function Header({setRow}) {
     return (
         <div className="fixed">
             <div className="Header">
-                <div className="add_item">
-                    <img src={plus} className='plusimg' />
-                    <h4 className="name-bold">Yangi buyurtma <br /> qo'shish</h4>
-                </div>
+                <SizeExample/>
                 <div className="header_categories">
                     <ul className="header_category">
                         <li>

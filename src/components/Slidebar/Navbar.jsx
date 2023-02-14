@@ -9,10 +9,8 @@ import Check6 from '../../assets/icons/users.svg'
 import Check7 from '../../assets/icons/bar-chart-2.svg'
 import LogOut from '../../assets/icons/log-out.svg'
 import { NavLink } from "react-router-dom"
-import Accardion from "../chakra/Menu"
 import Menu from "../chakra/Menu"
 import { useState } from "react"
-
 let activeStyle = {
 
 };
