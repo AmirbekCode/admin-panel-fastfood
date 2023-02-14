@@ -137,7 +137,7 @@ export default function Navbar() {
             </div>
             <div className="categories">
                 <ul className="categories-list">
-                    <NavLink to="/">
+                    <NavLink to="/home">
                         <li onClick={Clickbuyurtma} className={`categories-item ${buyurtma}`}>
                             <div className="df">
                                 <img src={Check} className="c-icon" />
@@ -194,6 +194,7 @@ export default function Navbar() {
                     <h2 className="c-name">Chiqish</h2>
                 </div>
             </div>
+            
         </div>
 
     )

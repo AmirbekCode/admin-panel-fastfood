@@ -1,7 +1,12 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import formImg from "../../assets/images/3390.png"
+import Grids from "../Grids/Grid";
 
 
-function Login() {
+
+function Login({setPath}) {
+
     return (
         <div className="Login">
             <div className="flexContent">
@@ -24,8 +29,10 @@ function Login() {
                             <input type="password" className="InputPassword"/>                            
                         </div>
                     </div>
+                    <Link to="/grid">
+                         <button className="ButtonRef">Tizimga Kirish</button>             
+                    </Link>
                 </div>
-                <button className="">Tizimga Kirish</button>
             </div>
 
         </div>

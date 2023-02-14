@@ -29,10 +29,9 @@ export default function Grids() {
                 <Navbar />
             </GridItem>
             <GridItem pl='2' bg={'gray.200'} area={'main'} paddingLeft={'none'} >
-            <Routers Route={parsePath} row={row}/>
+                <Routers Route={parsePath} row={row}/>
             </GridItem>
             <GridItem pl='2' area={'footer'}>
-
             </GridItem>
         </Grid>
     )
