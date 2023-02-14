@@ -13,7 +13,6 @@ input:focus {
 }
 
 .Login {
-    min-width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -134,11 +133,11 @@ input:focus {
 .ImgOrder {
     border-top-right-radius: 6px;
     border-top-left-radius: 6px;
-    width: 250px;
+    width: 220px;
 }
 
 .CardOrder {
-    width: 250px;
+    width: 220px;
     min-height: 180px;
     left: 554px;
     top: 226px;
@@ -190,32 +189,49 @@ color: #8D9BA8;
 .newOrderGrid {
     display: flex;
     height: 100%;
+    gap: 15px;
 }
 
 .new_order__section {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .order__section {
     flex: 1;
+    height: 100%;
 }
 .new-order__category {
 width: 464px;
 height: 44px;
-left: 554px;
-top: 159px;
 background: #EDEFF3;
 border-radius: 24px;
 display: flex;
 align-items: center;
 justify-content: space-around;
+padding: 10px;
 }
 
 .new-order-listitem{
     font-size: 13px;
     line-height: 16px;
-    color: #2D3A45;
-    mix-blend-mode: normal;
-    opacity: 0.35;
+    color: #2d3a45c2;
+    padding: 8px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
 
+.new-order-listitem:hover {
+    color: #000;
+    background-color: #fff;
+    box-shadow: 0px 2px 2px rgba(174, 176, 181, 0);
+    border-radius: 18px;
+}
+
+.Neworder {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
 }

@@ -8,7 +8,7 @@ import Check5 from '../../assets/icons/archive.svg'
 import Check6 from '../../assets/icons/users.svg'
 import Check7 from '../../assets/icons/bar-chart-2.svg'
 import LogOut from '../../assets/icons/log-out.svg'
-import { NavLink } from "react-router-dom"
+import { NavLink, Link } from "react-router-dom"
 import Menu from "../chakra/Menu"
 import { useState } from "react"
 let activeStyle = {
@@ -189,13 +189,11 @@ export default function Navbar() {
                 </ul>
                 <div className="log-out">
                     <img src={LogOut} className="c-icon" />
-                    <h2 className="c-name">Chiqish</h2>
+                    <Link to="/login">
+                        <h2 className="c-name">Chiqish</h2>
+                    </Link>
                 </div>
             </div>
-            
         </div>
-
     )
-
 }
-

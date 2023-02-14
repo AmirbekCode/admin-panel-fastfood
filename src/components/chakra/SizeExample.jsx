@@ -6,6 +6,8 @@ import {
     DrawerOverlay,
     DrawerContent,
     Button,
+    Center,
+    Divider,
     DrawerCloseButton,
     useDisclosure
 } from '@chakra-ui/react'
@@ -23,6 +25,8 @@ export default function SizeExample() {
         onOpen()
     }
 
+    const sizes = ['xl']
+
     return (
         <>
             <Button
@@ -30,8 +34,8 @@ export default function SizeExample() {
                 _active={'none'}
                 _hover={'none'}
                 onClick={() => handleClick(size)}
-                // key={size}
-                m={4}>
+                key={size}
+                m={6}>
                 <div className="add_item">
                     <img src={plus} className='plusimg' />
                     <h4 className="name-bold">Yangi buyurtma <br /> qo'shish</h4>
@@ -39,9 +43,9 @@ export default function SizeExample() {
             </Button>
 
 
-            <Drawer onClose={onClose} isOpen={isOpen} w={"700px"} >
+            <Drawer onClose={onClose} isOpen={isOpen} size={sizes}>
                 <DrawerOverlay />
-                <DrawerContent>
+                <DrawerContent >
                     <DrawerCloseButton />
                     <DrawerHeader></DrawerHeader>
                     <DrawerBody>
@@ -56,11 +60,22 @@ export default function SizeExample() {
                                     <li className="new-order-listitem">Salatlar</li>
                                     <li className="new-order-listitem">Shaverma</li>
                                 </ul>
-                                <NewOrder />
+                                <div className="Neworder">
+                                    <NewOrder />
+                                    <NewOrder />
+                                    <NewOrder />
+                                    <NewOrder />
+                                    <NewOrder />
+                                </div>
+
                             </div>
-
+                            <Center height='50px'>
+                                <Divider orientation='vertical' />
+                            </Center>
                             <div className="order__section">
-
+                                <h2 className="header-title">
+                                    Buyurtma ro’yxati
+                                </h2>
                             </div>
                         </div>
 

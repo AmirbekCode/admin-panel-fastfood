@@ -29,7 +29,7 @@ function Login({setPath}) {
                             <input type="password" className="InputPassword"/>                            
                         </div>
                     </div>
-                    <Link to="/grid">
+                    <Link to="/home">
                          <button className="ButtonRef">Tizimga Kirish</button>             
                     </Link>
                 </div>
