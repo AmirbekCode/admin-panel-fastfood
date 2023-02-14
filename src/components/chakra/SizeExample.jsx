@@ -23,8 +23,6 @@ export default function SizeExample() {
         onOpen()
     }
 
-    const sizes = ['xl']
-
     return (
         <>
             <Button
@@ -32,7 +30,7 @@ export default function SizeExample() {
                 _active={'none'}
                 _hover={'none'}
                 onClick={() => handleClick(size)}
-                key={size}
+                // key={size}
                 m={4}>
                 <div className="add_item">
                     <img src={plus} className='plusimg' />
@@ -41,30 +39,32 @@ export default function SizeExample() {
             </Button>
 
 
-            <Drawer onClose={onClose} isOpen={isOpen} size={sizes}>
+            <Drawer onClose={onClose} isOpen={isOpen} w={"700px"} >
                 <DrawerOverlay />
                 <DrawerContent>
                     <DrawerCloseButton />
                     <DrawerHeader></DrawerHeader>
                     <DrawerBody>
+                        <div className="newOrderGrid">
+                            <div className="new_order__section">
+                                <h2 className="header-title">
+                                    Yangi buyurtma qo’shish
+                                </h2>
+                                <ul className="new-order__category">
+                                    <li className="new-order-listitem">Burger</li>
+                                    <li className="new-order-listitem">Lavash</li>
+                                    <li className="new-order-listitem">Salatlar</li>
+                                    <li className="new-order-listitem">Shaverma</li>
+                                </ul>
+                                <NewOrder />
+                            </div>
 
+                            <div className="order__section">
 
-                        <div className="new_order__section">
-                            <h2 className="header-title">
-                            Yangi buyurtma qo’shish
-                            </h2>
-                            <ul className="new-order__category">
-                                <li className="new-order-listitem">Burger</li>
-                                <li className="new-order-listitem">Lavash</li>
-                                <li className="new-order-listitem">Salatlar</li>
-                                <li className="new-order-listitem">Shaverma</li>
-                            </ul>
-                            <NewOrder/>
+                            </div>
                         </div>
 
-                        <div className="order__section">
-                            
-                        </div>
+
 
                     </DrawerBody>
                 </DrawerContent>

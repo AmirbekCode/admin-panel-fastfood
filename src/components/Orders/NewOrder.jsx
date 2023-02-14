@@ -1,5 +1,6 @@
+import { Button } from "@chakra-ui/react"
 import { useState } from "react"
-
+import Burger from '../../assets/images/Burger.png'
 
 
 
@@ -19,25 +20,25 @@ function Remove(){
 }
     return(
         <div className="CardOrder">
-            {/* <img src={p} alt="" /> */}
+            <img src={Burger} className="ImgOrder" />
             <div className="NewOrderItem">
                 <h4 className="titleOrder">
-                    {}
+                    Big Burger
                 </h4>
                 <p className="categoryItem">
-                    {}
+                    Mozoli karoche
                 </p>
                 <div className="bottom-section">
                     <span className="priceOrder">
-                        {} UZS
+                        67.000   UZS
                     </span>                    
-                </div>
+                
                 <div className="calt">
-                    <button onClick={Remove}>-</button>
+                    <Button onClick={Remove}>-</Button>
                     {numberr}
-                    <button onClick={Add}>+</button>
+                    <Button onClick={Add}>+</Button>
                 </div>
-
+                </div>
             </div>
         </div>
     )
