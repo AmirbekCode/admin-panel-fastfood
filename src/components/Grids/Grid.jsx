@@ -5,7 +5,7 @@ import Navbar from '../Slidebar/Navbar'
 import Cardd from '../Orders/Card'
 import { parsePath, Route} from 'react-router-dom'
 import Routers from '../../router/Routers'
-
+import SearchHeader from '../header/header2/SearchHeader'
 
 
 export default function Grids() {
@@ -23,7 +23,7 @@ export default function Grids() {
             color='blackAlpha.700'
         >
             <GridItem pl='2' width={"100vw"} height={'97px'} position={"fixed"} bg={"#fff"} zIndex={"998"} boxShadow={"-1px 5px 5px -1px rgba(0, 0, 0, 0.23)"}>
-                <Header setRow={setRow}/>
+                <SearchHeader setRow={setRow}/>
             </GridItem>
             <GridItem pl='2' area={'nav'} position={'fixed'} zIndex={"999"}>
                 <Navbar />

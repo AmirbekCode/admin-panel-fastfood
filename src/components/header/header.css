@@ -1,16 +1,69 @@
-
 .Header {
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between;
     align-items: center;
     width: 100%;
-    height:62px;
+    height: 62px;
     z-index: 999;
     padding: 16px;
     margin-top: 20px;
 }
 
+.Header2 {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    width: 100%;
+    height: 62px;
+    z-index: 999;
+    padding: 16px;
+    margin-top: 20px;
+}
 
+.filter {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px 4px rgba(174, 176, 181, 0.314986);
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.select {
+    border: 1px solid #EDEFF3;
+    border-radius: 6px;
+    width: 265px;
+    height: 44px;
+}
+
+#filter {
+    padding: 15px;
+}
+
+option {
+
+}
+
+.input_section {
+    width: 300px;
+    height: 48px;
+    left: 557px;
+    top: 16px;
+    background: #EDEFF3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+}
+
+.inputHeader {
+    height: 35px;
+    width: 250px;
+    background: none;
+}
+
+.inputHeader::placeholder {
+    color: #24242478;
+    opacity: 0.7;
+}
 
 .plusimg {
     padding: 15px;
@@ -49,9 +102,9 @@
 }
 
 .categories_name {
-padding: 10px 64px;
-transition: 0.4s;
-border-radius: 18px;
+    padding: 10px 64px;
+    transition: 0.4s;
+    border-radius: 18px;
 }
 
 .categories_name:hover {
@@ -71,12 +124,12 @@ border-radius: 18px;
 
 
 .layout1 {
-    
+
     background: #EDEFF3;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding:7px;
+    padding: 7px;
     gap: 22px;
     border-radius: 24px;
     display: flex;
