@@ -11,6 +11,7 @@ import SearchHeader from '../header/header2/SearchHeader'
 export default function Grids() {
 
     const [row , setRow] = useState('Card')
+    const [nav , setNav] = useState(<SearchHeader setRow={setRow}/>)
 
     return (
         <Grid
@@ -23,13 +24,13 @@ export default function Grids() {
             color='blackAlpha.700'
         >
             <GridItem pl='2' width={"100vw"} height={'97px'} position={"fixed"} bg={"#fff"} zIndex={"998"} boxShadow={"-1px 5px 5px -1px rgba(0, 0, 0, 0.23)"}>
-                <SearchHeader setRow={setRow}/>
+                {nav}
             </GridItem>
             <GridItem pl='2' area={'nav'} position={'fixed'} zIndex={"999"}>
-                <Navbar />
+                <Navbar setNav={setNav} row={row}/>
             </GridItem>
             <GridItem pl='2' bg={'gray.200'} area={'main'} paddingLeft={'none'} >
-                <Routers Route={parsePath} row={row}/>
+                <Routers Route={parsePath} row={row} setNav={setNav}/>
             </GridItem>
             <GridItem pl='2' area={'footer'}>
             </GridItem>

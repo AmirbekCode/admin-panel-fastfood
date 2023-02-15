@@ -2,10 +2,10 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import formImg from "../../assets/images/3390.png"
 import Grids from "../Grids/Grid";
+import Header from "../header/Header";
 
 
-
-function Login({setPath}) {
+function Login({setNav , row}) {
 
     return (
         <div className="Login">

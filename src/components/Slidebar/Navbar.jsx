@@ -11,6 +11,8 @@ import LogOut from '../../assets/icons/log-out.svg'
 import { NavLink, Link } from "react-router-dom"
 import Menu from "../chakra/Menu"
 import { useState } from "react"
+import Header from "../header/Header"
+import SearchHeader from "../header/header2/SearchHeader"
 let activeStyle = {
 
 };
@@ -23,7 +25,7 @@ let activeClassName = "underline";
 
 
 
-export default function Navbar() {
+export default function Navbar({setNav , row}) {
 
 
     const [buyurtma, setBuyurtma] = useState('')
@@ -136,8 +138,8 @@ export default function Navbar() {
             <div className="categories">
                 <ul className="categories-list">
                     <NavLink to="/home">
-                        <li onClick={Clickbuyurtma} className={`categories-item ${buyurtma}`}>
-                            <div className="df">
+                        <li onClick={Clickbuyurtma}  className={`categories-item ${buyurtma}`}>
+                            <div className="df" onClick={() => setNav(<Header row={row}/>) }>
                                 <img src={Check} className="c-icon" />
                                 <h2 className="c-name">Buyurtmalar</h2>
                             </div>
@@ -145,7 +147,7 @@ export default function Navbar() {
                     </NavLink>
                     <NavLink to='/product' >
                         <li onClick={Clickmaxsulot} className={`categories-item ${maxsulot}`}>
-                            <div className="df ">
+                            <div className="df"  onClick={() => setNav(<SearchHeader />)}  >
                                 <img src={Check2} className="c-icon " />
                                 <h2 className="c-name">Maxsulotlar</h2>
                             </div>
